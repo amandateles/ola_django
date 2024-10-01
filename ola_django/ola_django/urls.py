@@ -23,6 +23,6 @@ def ola_django(request):
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('ola_django/', ola_django)
+    path('ola_django/', ola_django),
     path('primeiro_app/', include('primeiro_app.urls')),
 ]

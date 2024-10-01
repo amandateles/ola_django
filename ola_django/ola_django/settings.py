@@ -76,7 +76,12 @@ WSGI_APPLICATION = 'ola_django.wsgi.application'
 
 DATABASES = {
     'default': {
-        
+        'ENGINE': 'django.db.backends.mysql', 
+        'NAME': 'oladjango', 
+        'USER':'root', # Substitua pelo usuário do MySQL
+        'PASSWORD': 'DevMySQ!', #Substitua pela sua senha MYSQL
+        'HOST': 'localhost', # Ou o endereço do seu servidor MySQL
+        'PORT': '3306',
     }
 }
 

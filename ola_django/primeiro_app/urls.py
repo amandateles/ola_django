@@ -1,10 +1,10 @@
 from django.urls import path
-from import . views
 from django.http import HttpResponse
+from . import views 
 
-def oiDjango(request):
-    return HttpResponse('Olá, primeiro_app')
+def ola_django(request):
+    return HttpResponse('Ola mundo, sou o Django!')
 
-urlpatterns = (
-    path('', oiDjango),
-)
+urlpatterns = [
+    path('ola_django/', ola_django),
+]
